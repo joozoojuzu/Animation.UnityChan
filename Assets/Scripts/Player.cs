@@ -43,6 +43,10 @@ public class Player : MonoBehaviour
             anim.Play("WAIT04", -1, 0f);
         }
 
+
+
+
+
 	    if (Input.GetMouseButtonDown(0))
 	    {
 	        int n = Random.Range(0, 2);
@@ -96,15 +100,5 @@ public class Player : MonoBehaviour
         }
 
         rbody.velocity = new Vector3(moveX, 0f, moveZ);
-
-
-//        if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0) && anim.GetCurrentAnimatorStateInfo(0).IsName("WAIT00"))
-//        {
-//            Debug.Log("1");
-//	    }
-//        else
-//        {
-//            Debug.Log("2");
-//        }
     }
 }
